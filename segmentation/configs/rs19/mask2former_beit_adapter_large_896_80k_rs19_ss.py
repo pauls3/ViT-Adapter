@@ -7,7 +7,8 @@ _base_ = [
 ]
 crop_size = (896, 896)
 # pretrained = 'https://conversationhub.blob.core.windows.net/beit-share-public/beit/beit_large_patch16_224_pt22k_ft22k.pth'
-pretrained = 'pretrained/beit_large_patch16_224_pt22k_ft22k.pth'
+# pretrained = 'pretrained/beit_large_patch16_224_pt22k_ft22k.pth'
+pretrained = 'pretrained/mask2former_beit_adapter_large_896_80k_cityscapes.pth.tar'
 model = dict(
     pretrained=pretrained,
     backbone=dict(
